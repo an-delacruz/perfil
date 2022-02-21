@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./card.css";
+import "../../images/iconofacebook.png";
 
 function Card() {
   return (
@@ -64,10 +65,7 @@ function Card() {
         <div className="redesContainer">
           <h3>Redes Sociales</h3>
           <div className="iconosRedes">
-            <img
-              src="../../../assets/images/icono-facebook.png"
-              alt="iconFacebook"
-            />
+            <img src="../../images/iconofacebook.png" alt="iconFacebook" />
             <img
               src="../../../assets/images/icono-instagram.png"
               alt="iconInstagram"
