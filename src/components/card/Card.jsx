@@ -64,8 +64,14 @@ function Card() {
         <div className="redesContainer">
           <h3>Redes Sociales</h3>
           <div className="iconosRedes">
-            <img src="icono-facebook.png" alt="iconFacebook" />
-            <img src="icono-instagram.png" alt="iconInstagram" />
+            <img
+              src="../../../assets/images/icono-facebook.png"
+              alt="iconFacebook"
+            />
+            <img
+              src="../../../assets/images/icono-instagram.png"
+              alt="iconInstagram"
+            />
           </div>
         </div>
       </div>
