@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import Card from "./components/card/Card";
 
 const root = document.getElementById("root");
 
 ReactDOM.render(
   <div>
-    <h2>Hola mundo</h2>
+    <Card />
   </div>,
   root
 );
-

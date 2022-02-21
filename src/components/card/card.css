@@ -1,0 +1,207 @@
+.mainContainer {
+  width: 100%;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+.profileContainer {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  padding-top: 5%;
+  background-color: #037cbd;
+  color: white;
+}
+.nameContainer {
+  border-bottom: 0.1px solid rgba(186, 186, 186, 0.2);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.photoContainer > img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
+.nameContainer > h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.position {
+  width: 8rem;
+  word-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 0.7rem;
+}
+.optionsContainer {
+  display: flex;
+}
+.btnLlamarContainer {
+  padding-top: 2%;
+  width: 50%;
+  height: 3.2rem;
+  display: grid;
+  cursor: pointer;
+  grid-template-areas:
+    "imgLlamar"
+    "lblLlamar";
+  background-color: #037cbd;
+  color: white;
+  border: none;
+  border-right: 0.1px solid rgba(186, 186, 186, 0.2);
+}
+.btnLlamarContainer:focus {
+  background-color: #01669c;
+}
+.btnLlamarContainer > i {
+  grid-area: imgLlamar;
+  font-size: 1rem;
+}
+.btnLlamarContainer > label {
+  grid-area: lblLlamar;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.btnEmailContainer {
+  padding-top: 2%;
+  width: 50%;
+  cursor: pointer;
+  height: 3.2rem;
+  display: grid;
+  background-color: #037cbd;
+  color: white;
+  border: none;
+  grid-template-areas:
+    "imgEmail"
+    "lblEmail";
+}
+.btnEmailContainer:focus {
+  background-color: #01669c;
+}
+.btnEmailContainer > i {
+  grid-area: imgEmail;
+  font-size: 1rem;
+}
+.btnEmailContainer > label {
+  grid-area: lblEmail;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+.dataContainer {
+  display: grid;
+  grid-template-areas:
+    "telCon"
+    "emCon"
+    "wrkCon";
+  padding-top: 2rem;
+  padding-left: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.icono-datos {
+  color: rgb(189, 188, 188);
+}
+.telephoneContainer {
+  grid-area: telCon;
+  display: flex;
+  padding: 0rem 0rem 1rem 0rem;
+}
+.telDataContainer {
+  width: 100%;
+}
+.movil {
+  display: grid;
+}
+.movil > span {
+  padding-top: 0.2rem;
+  opacity: 0.5;
+}
+.telefono {
+  padding-top: 2rem;
+  display: grid;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.telefono > span {
+  padding-top: 0.2rem;
+  opacity: 0.5;
+}
+.emailContainer {
+  grid-area: emCon;
+  display: flex;
+  padding: 0rem 0rem 1rem 0rem;
+}
+.email {
+  display: grid;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.email > span {
+  padding-top: 0.2rem;
+  opacity: 0.5;
+}
+.workContainer {
+  grid-area: wrkCon;
+  display: block;
+  padding: 0rem 0rem 0rem 0rem;
+}
+.workplaceContainer {
+  width: 100%;
+  display: flex;
+}
+.workplace {
+  display: grid;
+}
+.workplace > span {
+  padding-top: 0.2rem;
+  opacity: 0.5;
+}
+.websiteContainer {
+  width: 100%;
+  display: flex;
+  padding-top: 2rem;
+}
+.website {
+  display: grid;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.website > span {
+  padding-top: 0.2rem;
+  opacity: 0.5;
+}
+.icono-datos {
+  padding-right: 2rem;
+}
+.redesContainer {
+  padding-left: 3.5rem;
+  display: block;
+}
+.redesContainer > h3 {
+  opacity: 0.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.iconosRedes > img {
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+  padding: 0.5rem 0rem 1rem 1rem;
+}
