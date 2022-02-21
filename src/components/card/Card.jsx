@@ -1,27 +1,34 @@
 import React from "react";
 import "./card.css";
-import Avatar from "./Avatar";
+import Avatar from "../avatar/Avatar";
 import IconFacebook from "../../images/IconFacebook.png";
 import IconInstagram from "../../images/IconInstagram.png";
 
-function Card() {
+function Card(props) {
+  var Contacto = props.Contacto;
   return (
     <div className="mainContainer">
       <div className="profileContainer">
-        <Avatar />
+        <Avatar ImgAvatar={Contacto.ImgAvatar} />
         <div className="nameContainer">
-          <h3>Noemi Ponce</h3>
-          <div className="position">Ing. Sistemas Computacionales</div>
+          <h3>{Contacto.Nombre}</h3>
+          <div className="position">{Contacto.Puesto}</div>
         </div>
         <div className="optionsContainer">
           <div className="btnLlamarContainer">
-            <button className="btnLlamar">
+            <button
+              className="btnLlamar"
+              onClick={() => window.open("tel:" + Contacto.Movil)}
+            >
               <i className="material-icons">phone</i>
               <label>LLAMAR</label>
             </button>
           </div>
           <div className="btnEmailContainer">
-            <button className="btnEmail">
+            <button
+              className="btnEmail"
+              onClick={() => window.open("mailto:" + Contacto.Email)}
+            >
               <i className="material-icons">send</i>
               <label>EMAIL</label>
             </button>
@@ -33,11 +40,11 @@ function Card() {
           <i className="icono-datos material-icons">phone</i>
           <div className="telDataContainer">
             <div className="movil">
-              <label>956-6354833</label>
+              <label>{Contacto.Movil}</label>
               <span>Móvil</span>
             </div>
             <div className="telefono">
-              <label>956-795-1280</label>
+              <label>{Contacto.Telefono}</label>
               <span>Teléfono</span>
             </div>
           </div>
@@ -45,7 +52,7 @@ function Card() {
         <div className="emailContainer">
           <i className="icono-datos material-icons">mail</i>
           <div className="email">
-            <label>nponce@syntranet.net</label>
+            <label>{Contacto.Email}</label>
             <span>Email</span>
           </div>
         </div>
@@ -53,14 +60,14 @@ function Card() {
           <div className="workplaceContainer">
             <i className="icono-datos material-icons">work</i>
             <div className="workplace">
-              <label>Synergy Trade Network, Inc.</label>
-              <span>Ing. Sistemas Computacionales</span>
+              <label>{Contacto.Trabajo}</label>
+              <span>{Contacto.Puesto}</span>
             </div>
           </div>
           <div className="websiteContainer">
             <i className="icono-datos material-icons">language</i>
             <div className="website">
-              <label>www.syntranet.net</label>
+              <label>{Contacto.PaginaWeb}</label>
               <span>Página web</span>
             </div>
           </div>
@@ -68,8 +75,12 @@ function Card() {
         <div className="redesContainer">
           <h3>Redes Sociales</h3>
           <div className="iconosRedes">
-            <img href="" src={IconFacebook} alt="Facebook" />
-            <img href="" src={IconInstagram} alt="Instagram" />
+            <a href={Contacto.Facebook}>
+              <img href={Contacto.Facebook} src={IconFacebook} alt="Facebook" />
+            </a>
+            <a href={Contacto.Instagram}>
+              <img src={IconInstagram} alt="Instagram" />
+            </a>
           </div>
         </div>
       </div>
