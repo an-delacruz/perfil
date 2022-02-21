@@ -1,0 +1,5 @@
+.photoContainer > img {
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+}
