@@ -11,13 +11,6 @@ import IconTwitter from "../../images/IconTwitter.png";
 function Card(props) {
   var Contacto = props.Contacto;
   var { redesSociales } = props.Contacto;
-  //Valores para probar que el icono se esconde al no tener valor.
-  redesSociales.facebook = "https://www.facebook.com";
-  redesSociales.instagram = "https://www.instagram.com";
-  redesSociales.linkedIn = "https://LinkedIn.com";
-  redesSociales.twitter = "https://www.twitter.com";
-  redesSociales.whatsApp = "https://www.whatsapp.com";
-  redesSociales.youTube = "https://www.youtube.com";
   return (
     <div className="mainContainer">
       <div className="profileContainer">
@@ -87,52 +80,102 @@ function Card(props) {
         <div className="redesContainer">
           <h3>Redes Sociales</h3>
           <div className="iconosRedes">
-            {redesSociales.facebook ? (
+            <a
+              href={
+                redesSociales.facebook
+                  ? redesSociales.facebook
+                  : "https://wwww.facebook.com"
+              }
+            >
+              <img src={IconFacebook} alt="Facebook" />
+            </a>
+            {/* {redesSociales.facebook ? (
               <a href={redesSociales.facebook}>
                 <img src={IconFacebook} alt="Facebook" />
               </a>
             ) : (
               ""
-            )}
-
-            {redesSociales.instagram ? (
+            )} */}
+            <a
+              href={
+                redesSociales.instagram
+                  ? redesSociales.instagram
+                  : "https://www.instagram.com"
+              }
+            >
+              <img src={IconInstagram} alt="Instagram" />
+            </a>
+            {/* {redesSociales.instagram ? (
               <a href={redesSociales.instagram}>
                 <img src={IconInstagram} alt="Instagram" />
               </a>
             ) : (
               ""
-            )}
-
-            {redesSociales.linkedIn ? (
+            )} */}
+            <a
+              href={
+                redesSociales.linkedIn
+                  ? redesSociales.linkedIn
+                  : "https://www.LinkedIn.com"
+              }
+            >
+              <img src={IconLinkedIn} alt="LinkedIn" />
+            </a>
+            {/* {redesSociales.linkedIn ? (
               <a href={redesSociales.linkedIn}>
                 <img src={IconLinkedIn} alt="LinkedIn" />
               </a>
             ) : (
               ""
-            )}
-
-            {redesSociales.twitter ? (
+            )} */}
+            <a
+              href={
+                redesSociales.twitter
+                  ? redesSociales.twitter
+                  : "https://www.twitter.com"
+              }
+            >
+              <img src={IconTwitter} alt="Twitter" />
+            </a>
+            {/* {redesSociales.twitter ? (
               <a href={redesSociales.twitter}>
                 <img src={IconTwitter} alt="Twitter" />
               </a>
             ) : (
               ""
-            )}
-            {redesSociales.whatsApp ? (
+            )} */}
+            <a
+              href={
+                redesSociales.whatsApp
+                  ? redesSociales.whatsApp
+                  : "https://www.whatsapp.com"
+              }
+            >
+              <img src={IconWhatsApp} alt="WhatsApp" />
+            </a>
+            {/* {redesSociales.whatsApp ? (
               <a href={redesSociales.whatsApp}>
                 <img src={IconWhatsApp} alt="WhatsApp" />
               </a>
             ) : (
               ""
-            )}
-
-            {redesSociales.youTube ? (
+            )} */}
+            <a
+              href={
+                redesSociales.youTube
+                  ? redesSociales.youTube
+                  : "https://www.YouTube.com"
+              }
+            >
+              <img src={IconYouTube} alt="YouTube" />
+            </a>
+            {/* {redesSociales.youTube ? (
               <a href={redesSociales.youTube}>
                 <img src={IconYouTube} alt="YouTube" />
               </a>
             ) : (
               ""
-            )}
+            )} */}
           </div>
         </div>
       </div>
