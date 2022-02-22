@@ -159,7 +159,6 @@ function Card(props) {
 
 function shareContact() {}
 function addContact(urlvcf) {
-  console.log(urlvcf);
   window.open(`https://drive.google.com/uc?export=download&id=${urlvcf}`);
 }
 
