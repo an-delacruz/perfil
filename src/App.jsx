@@ -18,7 +18,6 @@ function App() {
       fetchDataCard(id).then((val) => setCard(val));
     }
   }, [id]);
-
   return card ? <Card Contacto={card} /> : <Loading />;
 }
 export default App;

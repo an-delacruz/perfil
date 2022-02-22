@@ -221,6 +221,12 @@ body {
   cursor: pointer;
   margin: 1rem 1.5rem 1rem 0rem;
 }
+.iconoRed {
+  height: 1.8rem;
+  width: 1.8rem;
+  cursor: pointer;
+  margin: 1rem 1.5rem 1rem 0rem;
+}
 .actionsContainer {
   /* display:; */
   /* grid-template-areas:

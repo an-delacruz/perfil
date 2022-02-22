@@ -1,22 +1,25 @@
 import React from "react";
 import "./card.css";
 import Avatar from "../avatar/Avatar";
-import IconFacebook from "../../images/IconFacebook.png";
 import IconInstagram from "../../images/IconInstagram.png";
-import IconWhatsApp from "../../images/IconWhatsApp.png";
-import IconLinkedIn from "../../images/IconLinkedIn.png";
 import IconYouTube from "../../images/IconYouTube.png";
-import IconTwitter from "../../images/IconTwitter.png";
+// import FacebookShareCount from "react-share";
+import {
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+} from "react-share";
 function Card(props) {
   var Contacto = props.Contacto;
   var { redesSociales } = props.Contacto;
   console.log(props.Contacto);
-  redesSociales.facebook = "https://facebook.com";
-  redesSociales.instagram = "https://instagram.com";
-  redesSociales.twitter = "https://twitter.com";
-  // redesSociales.whatsApp = "https://whatsapp.com";
-  redesSociales.linkedIn = "https://linkedin.com";
-  // redesSociales.youTube = "https://youtube.com";
+  // redesSociales.facebook = "";
+  // redesSociales.instagram = "";
+  // redesSociales.twitter = "";
+  // redesSociales.whatsApp = "";
+  // redesSociales.linkedIn = "";
+  // redesSociales.youTube = "";
   return (
     <div className="mainContainer">
       <div className="profileContainer">
@@ -88,12 +91,11 @@ function Card(props) {
           <div className="iconosRedes">
             {redesSociales.facebook ? (
               <a href={redesSociales.facebook} target="_blank" rel="noreferrer">
-                <img src={IconFacebook} alt="Facebook" />
+                <FacebookIcon round={true} className="iconoRed" />
               </a>
             ) : (
               ""
             )}
-
             {redesSociales.instagram ? (
               <a
                 href={redesSociales.instagram}
@@ -107,14 +109,14 @@ function Card(props) {
             )}
             {redesSociales.linkedIn ? (
               <a href={redesSociales.linkedIn} target="_blank" rel="noreferrer">
-                <img src={IconLinkedIn} alt="LinkedIn" />
+                <LinkedinIcon round={true} className="iconoRed" />
               </a>
             ) : (
               ""
             )}
             {redesSociales.twitter ? (
               <a href={redesSociales.twitter} target="_blank" rel="noreferrer">
-                <img src={IconTwitter} alt="Twitter" />
+                <TwitterIcon round={true} className="iconoRed" />
               </a>
             ) : (
               ""
@@ -122,7 +124,7 @@ function Card(props) {
 
             {redesSociales.whatsApp ? (
               <a href={redesSociales.whatsApp} target="_blank" rel="noreferrer">
-                <img src={IconWhatsApp} alt="WhatsApp" />
+                <WhatsappIcon round={true} className="iconoRed" />
               </a>
             ) : (
               ""
@@ -156,7 +158,6 @@ function Card(props) {
     </div>
   );
 }
-
 function shareContact() {}
 function addContact(urlvcf) {
   window.open(`https://drive.google.com/uc?export=download&id=${urlvcf}`);
