@@ -7,6 +7,7 @@ import IconWhatsApp from "../../images/IconWhatsApp.png";
 import IconLinkedIn from "../../images/IconLinkedIn.png";
 import IconYouTube from "../../images/IconYouTube.png";
 import IconTwitter from "../../images/IconTwitter.png";
+import IconFacebook2 from "../../images/IconFacebook.PNG";
 
 function Card(props) {
   var Contacto = props.Contacto;
@@ -87,7 +88,7 @@ function Card(props) {
                   : "https://wwww.facebook.com"
               }
             >
-              <img src={IconFacebook} alt="Facebook" />
+              <img src={IconFacebook2} alt="Facebook" />
             </a>
             {/* {redesSociales.facebook ? (
               <a href={redesSociales.facebook}>
