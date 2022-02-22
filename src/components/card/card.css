@@ -1,10 +1,17 @@
-.mainContainer {
-  width: 100%;
-  position: fixed;
+body{
+  background-color: #caf0f8;
   padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
+  margin:0;
+}
+
+
+.mainContainer {
+  max-width: 460px;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  background-color: white;
+  min-height: 100vh;
 }
 .profileContainer {
   width: 100%;
