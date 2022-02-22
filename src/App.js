@@ -4,7 +4,6 @@ async function fetchDataCard(id) {
   return await fetch(`${baseURL}card/${id}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.card);
       return data.card;
     })
     .catch((error) => {

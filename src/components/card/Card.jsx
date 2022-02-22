@@ -9,13 +9,19 @@ import IconYouTube from "../../images/IconYouTube.png";
 import IconTwitter from "../../images/IconTwitter.png";
 
 function Card(props) {
-  // console.log(props);
   var Contacto = props.Contacto;
-  // console.log(Contacto);
+  var { redesSociales } = props.Contacto;
+  //Valores para probar que el icono se esconde al no tener valor.
+  // redesSociales.facebook = "https://www.facebook.com";
+  // redesSociales.instagram = "https://www.instagram.com";
+  // redesSociales.linkedIn = "https://LinkedIn.com";
+  // redesSociales.twitter = "https://www.twitter.com";
+  // redesSociales.whatsApp = "https://www.whatsapp.com";
+  // redesSociales.youTube = "https://www.youtube.com";
   return (
     <div className="mainContainer">
       <div className="profileContainer">
-        <Avatar ImgAvatar={Contacto.ImgAvatar} />
+        <Avatar ImgAvatar={"https://picsum.photos/200"} />
         <div className="nameContainer">
           <h3>{Contacto.name}</h3>
           <div className="position">{Contacto.titulo}</div>
@@ -81,24 +87,52 @@ function Card(props) {
         <div className="redesContainer">
           <h3>Redes Sociales</h3>
           <div className="iconosRedes">
-            <a href={Contacto.redesSociales.facebook}>
-              <img src={IconFacebook} alt="Facebook" />
-            </a>
-            <a href={Contacto.redesSociales.instagram}>
-              <img src={IconInstagram} alt="Instagram" />
-            </a>
-            <a href={Contacto.redesSociales.linkedIn}>
-              <img src={IconLinkedIn} alt="LinkedIn" />
-            </a>
-            <a href={Contacto.redesSociales.twitter}>
-              <img src={IconTwitter} alt="Twitter" />
-            </a>
-            <a href={Contacto.redesSociales.whatsApp}>
-              <img src={IconWhatsApp} alt="WhatsApp" />
-            </a>
-            <a href={Contacto.redesSociales.youTube}>
-              <img src={IconYouTube} alt="YouTube" />
-            </a>
+            {redesSociales.facebook ? (
+              <a href={redesSociales.facebook}>
+                <img src={IconFacebook} alt="Facebook" />
+              </a>
+            ) : (
+              ""
+            )}
+
+            {redesSociales.instagram ? (
+              <a href={redesSociales.instagram}>
+                <img src={IconInstagram} alt="Instagram" />
+              </a>
+            ) : (
+              ""
+            )}
+
+            {redesSociales.linkedIn ? (
+              <a href={redesSociales.linkedIn}>
+                <img src={IconLinkedIn} alt="LinkedIn" />
+              </a>
+            ) : (
+              ""
+            )}
+
+            {redesSociales.twitter ? (
+              <a href={redesSociales.twitter}>
+                <img src={IconTwitter} alt="Twitter" />
+              </a>
+            ) : (
+              ""
+            )}
+            {redesSociales.whatsApp ? (
+              <a href={redesSociales.whatsApp}>
+                <img src={IconWhatsApp} alt="WhatsApp" />
+              </a>
+            ) : (
+              ""
+            )}
+
+            {redesSociales.youTube ? (
+              <a href={redesSociales.youTube}>
+                <img src={IconYouTube} alt="YouTube" />
+              </a>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>
