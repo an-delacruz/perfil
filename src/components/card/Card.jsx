@@ -12,12 +12,12 @@ function Card(props) {
   var Contacto = props.Contacto;
   var { redesSociales } = props.Contacto;
   //Valores para probar que el icono se esconde al no tener valor.
-  // redesSociales.facebook = "https://www.facebook.com";
-  // redesSociales.instagram = "https://www.instagram.com";
-  // redesSociales.linkedIn = "https://LinkedIn.com";
-  // redesSociales.twitter = "https://www.twitter.com";
-  // redesSociales.whatsApp = "https://www.whatsapp.com";
-  // redesSociales.youTube = "https://www.youtube.com";
+  redesSociales.facebook = "https://www.facebook.com";
+  redesSociales.instagram = "https://www.instagram.com";
+  redesSociales.linkedIn = "https://LinkedIn.com";
+  redesSociales.twitter = "https://www.twitter.com";
+  redesSociales.whatsApp = "https://www.whatsapp.com";
+  redesSociales.youTube = "https://www.youtube.com";
   return (
     <div className="mainContainer">
       <div className="profileContainer">
